@@ -1,0 +1,95 @@
+* {
+    text-align: center;
+    font-family: georgian;
+  }
+  
+  body {
+    background-color: gray;
+  }
+  
+  .title {
+    text-align: center;
+    color: white;
+    font-family: georgian;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    background-color: black;
+    padding: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .fotos {
+    margin: auto;
+    justify-content: center;
+    display: inline-block;
+  }
+  .fotos img {
+    border-radius: 5%;
+    margin: 2px;
+  }
+  
+  .fotos div {
+    border-radius: 5%;
+    background-color: white;
+    margin: 10px;
+    color: black;
+  }
+  
+  .fotos div:nth-child(1):hover {
+    animation-name: example;
+    animation-duration: 2s;
+  }
+  
+  .fotos div:nth-child(2):hover {
+    transform: rotate(5deg);
+  }
+  
+  .fotos div:nth-child(3):hover {
+    transform: rotate3d(1, 1, 0, 50deg);
+  }
+  
+  .fotos div:nth-child(4):hover {
+    transform: skewX(10deg);
+  }
+  
+  .fotos div:nth-child(5):hover {
+    transform: scale(110%);
+  }
+  
+  .fotos div:nth-child(6):hover {
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes example {
+    from {
+      opacity: 40%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes spin {
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  footer div {
+    color: gray;
+    background-color: rgb(173, 173, 173);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    height: auto;
+  }
+  
